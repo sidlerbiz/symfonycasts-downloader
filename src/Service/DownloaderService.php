@@ -268,6 +268,8 @@ class DownloaderService
             }
         ]);
 
+        var_dump($currentUrl);
+
         if ((string) $currentUrl !== 'https://symfonycasts.com/') {
             throw new \RuntimeException('Authorization failed.');
         }
